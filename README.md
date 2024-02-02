@@ -1,5 +1,19 @@
 # CapstoneRoV
- Main ROS repo for NYUAD CapstoneRoV
+Main ROS repo for NYUAD CapstoneRoV
+
+![Image of Version](https://img.shields.io/badge/version-latest-blue)
+![ROS Ubuntu 18.04 Docker](https://img.shields.io/badge/docker-ROS%20Ubuntu%2018.04-blue)
+![ROS Melodic](https://img.shields.io/badge/ROS-Melodic-brightgreen)
+![License](https://img.shields.io/badge/license-Open-blue.svg)
+
+## How to run
+
+Published Docker Image: [ROS Ubuntu 18.04 Docker Image](https://hub.docker.com/repository/docker/piko314159/ros-ubuntu18.04/tags?page=1&ordering=last_updated)
+
+
+```bash
+docker pull piko314159/ros-ubuntu18.04:latest
+
 
 ## How to run
 
@@ -57,9 +71,19 @@ To run GUI applications in docker container (e.g. gazebo, rviz), you need to con
 xhost +local:docker
 ```
 
-## For Pi : 
+## Notes for Pi
 
 After building image, you need to tag then push to dockerhub
-
+```
 pi@swarmic:~/Documents/GitHub/CapstoneRoV$ sudo docker tag ros-ubuntu18.04 piko314159/ros-ubuntu18.04
 pi@swarmic:~/Documents/GitHub/CapstoneRoV$ sudo docker push piko314159/ros-ubuntu18.04
+```
+
+## Contributing
+Contributions are welcome. Please adhere to this project's code of conduct.
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Contact
+For any queries or suggestions, please reach out to Pi Ko at pk2269@nyu.edu.
