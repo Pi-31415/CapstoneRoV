@@ -44,3 +44,10 @@ To run GUI applications in docker container (e.g. gazebo, rviz), you need to con
 ```
 xhost +local:docker
 ```
+
+## For Pi : 
+
+After building image, you need to tag then push to dockerhub
+
+pi@swarmic:~/Documents/GitHub/CapstoneRoV$ sudo docker tag ros-ubuntu18.04 piko314159/ros-ubuntu18.04
+pi@swarmic:~/Documents/GitHub/CapstoneRoV$ sudo docker push piko314159/ros-ubuntu18.04
