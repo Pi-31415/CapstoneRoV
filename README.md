@@ -1,4 +1,4 @@
-# CapstoneRoV
+# NYUAD ROV Capstone Repo
 
 This is the docker environment, loaded out of the box with Ubuntu 18.04, ROS Melodic, Python, supporting both versions 2.7 and 3, to ensure compatibility with a wide range of existing tools and scripts, for the NYUAD Capstone Underwater RoV project.
 
