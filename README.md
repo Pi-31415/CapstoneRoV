@@ -1,5 +1,12 @@
 # CapstoneRoV
-Main ROS repo for NYUAD CapstoneRoV
+
+This is the docker environment, loaded out of the box with Ubuntu 18.04, ROS Melodic, Python, supporting both versions 2.7 and 3, to ensure compatibility with a wide range of existing tools and scripts, for the NYUAD Capstone Underwater RoV project.
+
+This is intended for a straightforward and practical approach to setting up a development environment for our underwater robot. 
+
+This container supports Python both versions 2.7 and 3, to ensure compatibility with a wide range of existing tools and scripts, with a variety of Python packages like numpy and scipy, essential for data analysis and algorithm development. Additionally, the setup facilitates GUI applications, crucial for visual tools like RViz, gazebo out of the box.
+
+We ensure the ROS environment is always ready by sourcing it in the bashrc file, and we set our working directory to '/capstonerov' in mounted docker container to keep our project organized. 
 
 ![Image of Version](https://img.shields.io/badge/version-latest-blue)
 ![ROS Ubuntu 18.04 Docker](https://img.shields.io/badge/docker-ROS%20Ubuntu%2018.04-blue)
@@ -8,12 +15,14 @@ Main ROS repo for NYUAD CapstoneRoV
 
 ## How to run
 
-Published Docker Image: [ROS Ubuntu 18.04 Docker Image](https://hub.docker.com/repository/docker/piko314159/ros-ubuntu18.04/tags?page=1&ordering=last_updated)
+First, install Docker if you don't have it yet.
+
+Then, pull the published Docker Image: [ROS Ubuntu 18.04 Docker Image](https://hub.docker.com/repository/docker/piko314159/ros-ubuntu18.04/tags?page=1&ordering=last_updated), using the folowing command.
 
 
 ```bash
 docker pull piko314159/ros-ubuntu18.04:latest
-
+```
 
 ## How to run
 
