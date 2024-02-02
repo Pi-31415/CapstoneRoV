@@ -42,7 +42,7 @@ Then launch anything you want, such as
 rviz
 ```
 
-## Running on Mac (failed)
+## ⚠️ Running on Mac (failed)
 
 Ensure that XQuartz is running before you execute this script.
 
