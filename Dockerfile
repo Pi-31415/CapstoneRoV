@@ -46,19 +46,11 @@ RUN pip3 install --no-cache-dir \
     empy
 
 # Install additional packages for GUI x 11 forwarding
-# Install dependencies for Gazebo and OpenGL with llvmpipe
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-dri \
     x11-apps \
     x11-xserver-utils \
     libgl1-mesa-glx \
-    mesa-utils && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
-# Use llvmpipe driver for software rendering
-ENV LIBGL_ALWAYS_INDIRECT=1
-ENV GALLIUM_DRIVER=llvmpipe
+    mesa-utils
 
 # Source the ROS environment by default
 RUN echo "source /opt/ros/melodic/setup.bash" >> /root/.bashrc
