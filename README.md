@@ -24,14 +24,6 @@ Then, pull the published Docker Image: [ROS Ubuntu 18.04 Docker Image](https://h
 docker pull piko314159/ros-ubuntu18.04:latest
 ```
 
-## How to run
-
-Published Docker Image : https://hub.docker.com/repository/docker/piko314159/ros-ubuntu18.04/tags?page=1&ordering=last_updated
-
-```
-docker pull piko314159/ros-ubuntu18.04:latest
-```
-
 ## Running Docker Container with GUI support (Linux) - working
 
 ```
@@ -57,19 +49,6 @@ Ensure that XQuartz is running before you execute this script.
 ```
 chmod +x mac_run.sh
 ./mac_run.sh
-```
-
-
-## Checking versions
-
-To ensure ubuntu version
-```
-lsb_release -a
-```
-
-While in the docker container, you need to source
-```
-source /opt/ros/melodic/setup.bash
 ```
 
 # Using GUI
