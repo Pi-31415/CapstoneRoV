@@ -1,6 +1,11 @@
 # CapstoneRoV
  Main ROS repo for NYUAD CapstoneRoV
 
+## How to run
+
+```
+docker pull piko314159/ros-ubuntu18.04
+```
 
 ## Running Docker Container with GUI support (Linux)
 
