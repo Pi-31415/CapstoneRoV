@@ -15,6 +15,18 @@ docker pull piko314159/ros-ubuntu18.04:latest
 sudo docker ps -aq --filter "name=^/capstonerov$" | xargs -r sudo docker rm && sudo docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name capstonerov -v $(pwd):/capstonerov ros-ubuntu18.04
 ```
 
+To run roscore as background, run
+
+```
+roscore &
+```
+
+Then launch anything you want, such as 
+
+```
+rviz
+```
+
 ## Running on Mac (failed)
 
 Ensure that XQuartz is running before you execute this script.
