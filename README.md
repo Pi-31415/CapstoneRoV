@@ -2,11 +2,21 @@
  Main ROS repo for NYUAD CapstoneRoV
 
 
-## Running Docker Container with GUI support
+## Running Docker Container with GUI support (Linux)
 
 ```
 sudo docker ps -aq --filter "name=^/capstonerov$" | xargs -r sudo docker rm && sudo docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name capstonerov -v $(pwd):/capstonerov ros-ubuntu18.04
 ```
+
+## Running on Mac
+
+Ensure that XQuartz is running before you execute this script.
+
+```
+chmod +x run_docker_gui.sh
+./run_docker_gui.sh
+```
+
 
 ## Checking versions
 
