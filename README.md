@@ -20,8 +20,8 @@ sudo docker ps -aq --filter "name=^/capstonerov$" | xargs -r sudo docker rm && s
 Ensure that XQuartz is running before you execute this script.
 
 ```
-chmod +x run_docker_gui.sh
-./run_docker_gui.sh
+chmod +x mac_run.sh
+./mac_run.sh
 ```
 
 
