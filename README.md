@@ -6,7 +6,7 @@
 Published Docker Image : https://hub.docker.com/repository/docker/piko314159/ros-ubuntu18.04/tags?page=1&ordering=last_updated
 
 ```
-docker pull piko314159/ros-ubuntu18.04
+docker pull piko314159/ros-ubuntu18.04:latest
 ```
 
 ## Running Docker Container with GUI support (Linux)
